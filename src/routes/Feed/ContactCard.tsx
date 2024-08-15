@@ -5,6 +5,8 @@ import {
   AiOutlineGithub,
   AiOutlineInstagram,
   AiOutlineMail,
+  AiOutlineDiscord,
+  AiOutlineX,
 } from "react-icons/ai"
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
@@ -44,7 +46,7 @@ const ContactCard: React.FC = () => {
             css={{ overflow: "hidden" }}
           >
             <AiOutlineMail className="icon" />
-            <div className="name">email</div>
+            <div className="name">Email</div>
           </a>
         )}
         {CONFIG.profile.linkedin && (
@@ -54,7 +56,23 @@ const ContactCard: React.FC = () => {
             target="_blank"
           >
             <AiFillLinkedin className="icon" />
-            <div className="name">linkedin</div>
+            <div className="name">LinkedIn</div>
+          </a>
+        )}
+        {CONFIG.profile.discord && (
+          <a
+            href={`${CONFIG.profile.discord}`}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <AiOutlineDiscord className="icon" />
+            <div className="name">Discord</div>
+          </a>
+        )}
+        {CONFIG.profile.x && (
+          <a href={`${CONFIG.profile.x}`} rel="noreferrer" target="_blank">
+            <AiOutlineX className="icon" />
+            <div className="name">X</div>
           </a>
         )}
       </StyledWrapper>
