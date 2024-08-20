@@ -85,6 +85,10 @@ const StyledWrapper = styled.div`
   }
   .notion-page {
     padding: 0;
+
+    @media (min-width: 880px) {
+      width: 90% !important;
+    }
   }
   .notion-list {
     width: 100%;
