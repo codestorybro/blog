@@ -5,9 +5,9 @@ import Image from "next/image"
 
 const Logo = () => {
   return (
-    <StyledWrapper href="/" aria-label="Code Story Bro">
+    <StyledWrapper href="/" aria-label={CONFIG.profile.name}>
       <StyledLogo src={CONFIG.logo} width={40} height={40} alt="" />
-      <StyledSpan>Code Story Bro</StyledSpan>
+      <StyledSpan>{CONFIG.profile.name}</StyledSpan>
     </StyledWrapper>
   )
 }
