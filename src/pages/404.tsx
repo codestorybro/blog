@@ -21,6 +21,7 @@ NotFoundPage.getLayout = (page) => {
           description: CONFIG.blog.description,
           type: "website",
           url: CONFIG.link,
+          image: CONFIG.blog.image,
         }}
       />
       {page}

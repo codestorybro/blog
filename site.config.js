@@ -14,8 +14,11 @@ const CONFIG = {
   },
   // blog setting (required)
   blog: {
-    title: "Code Story Bro",
-    description: "Welcome to my blog dedicated to React",
+    title:
+      "Code Story Bro - master React with practical tutorials and insights",
+    description:
+      "Discover practical React tutorials, insightful advice, and a community of passionate developers dedicated to building better web applications. Whether you're a beginner or an expert, you'll find valuable content to enhance your React skills and deepen your programming knowledge. Let's grow and learn together!",
+    image: "/thumbnail.png",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
 
