@@ -5,6 +5,8 @@ import { formatDate } from "src/libs/utils"
 import Image from "next/image"
 import React from "react"
 import styled from "@emotion/styled"
+import { FacebookMessengerIcon, FacebookShareButton } from "react-share"
+import ShareableIcons from "src/components/ShareableIcons"
 
 type Props = {
   data: TPost
@@ -48,6 +50,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
               </div>
             )}
           </div>
+          <ShareableIcons />
           {data.thumbnail && (
             <div className="thumbnail">
               <Image
@@ -105,6 +108,20 @@ const StyledWrapper = styled.div`
       margin-bottom: 1rem;
       align-items: center;
       .tags {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        max-width: 100%;
+      }
+    }
+    > .share-buttons {
+      gap: 16px;
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: center;
+      flex-direction: row-reverse;
+      .buttons {
         display: flex;
         overflow-x: auto;
         flex-wrap: nowrap;

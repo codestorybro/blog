@@ -15,6 +15,7 @@ import "prismjs/themes/prism-tomorrow.css"
 import "katex/dist/katex.min.css"
 import { FC } from "react"
 import styled from "@emotion/styled"
+import ShareableIcons from "src/components/ShareableIcons"
 
 const _NotionRenderer = dynamic(
   () => import("react-notion-x").then((m) => m.NotionRenderer),
@@ -72,6 +73,7 @@ const NotionRenderer: FC<Props> = ({ recordMap }) => {
         }}
         mapPageUrl={mapPageUrl}
       />
+      <ShareableIcons />
     </StyledWrapper>
   )
 }

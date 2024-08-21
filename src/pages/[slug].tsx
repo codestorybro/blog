@@ -65,6 +65,7 @@ const DetailPage: NextPageWithLayout = () => {
 
   const meta = {
     title: post.title,
+    pageTitle: `Code Story Bro - ${post.title}`,
     date: new Date(date).toISOString(),
     image: image,
     description: post.summary || "",

@@ -4,6 +4,7 @@ import Head from "next/head"
 export type MetaConfigProps = {
   title: string
   description: string
+  pageTitle: string
   type: "Website" | "Post" | "Page" | string
   date?: string
   image?: string
@@ -13,7 +14,7 @@ export type MetaConfigProps = {
 const MetaConfig: React.FC<MetaConfigProps> = (props) => {
   return (
     <Head>
-      <title>{props.title}</title>
+      <title>{props.pageTitle}</title>
       <meta name="robots" content="follow, index" />
       <meta charSet="UTF-8" />
       <meta name="description" content={props.description} />

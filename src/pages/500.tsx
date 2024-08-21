@@ -1,6 +1,7 @@
+import Error500 from "src/routes/Error/error500"
 import { CONFIG } from "../../site.config"
 import { NextPageWithLayout, TPosts, TTags } from "../types"
-import CustomError from "../routes/Error"
+
 import MetaConfig from "src/components/MetaConfig"
 
 type Props = {
@@ -8,17 +9,17 @@ type Props = {
   posts: TPosts
 }
 
-const NotFoundPage: NextPageWithLayout<Props> = () => {
-  return <CustomError />
+const Error500Page: NextPageWithLayout<Props> = () => {
+  return <Error500 />
 }
 
-NotFoundPage.getLayout = (page) => {
+Error500Page.getLayout = (page) => {
   return (
     <>
       <MetaConfig
         {...{
           title: CONFIG.blog.title,
-          pageTitle: "Code Story Bro - 404 not found",
+          pageTitle: "Code Story Bro - 500 internal server error",
           description: CONFIG.blog.description,
           type: "website",
           url: CONFIG.link,
@@ -30,4 +31,4 @@ NotFoundPage.getLayout = (page) => {
   )
 }
 
-export default NotFoundPage
+export default Error500Page

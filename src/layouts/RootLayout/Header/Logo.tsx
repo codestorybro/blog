@@ -5,7 +5,7 @@ import Image from "next/image"
 
 const Logo = () => {
   return (
-    <StyledWrapper href="/" aria-label={CONFIG.blog.title}>
+    <StyledWrapper href="/" aria-label="Code Story Bro">
       <StyledLogo src={CONFIG.logo} width={40} height={40} alt="" />
       <StyledSpan>Code Story Bro</StyledSpan>
     </StyledWrapper>
