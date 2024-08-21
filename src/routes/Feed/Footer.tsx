@@ -13,13 +13,9 @@ type Props = {
 const Footer: React.FC<Props> = ({ className }) => {
   return (
     <StyledWrapper className={className}>
-      <a
-        href={`https://github.com/${CONFIG.profile.github}`}
-        target="_blank"
-        rel="noreferrer"
-      >
+      <span>
         © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`}
-      </a>
+      </span>
     </StyledWrapper>
   )
 }
@@ -27,7 +23,7 @@ const Footer: React.FC<Props> = ({ className }) => {
 export default Footer
 
 const StyledWrapper = styled.div`
-  a {
+  span {
     margin-top: 0.75rem;
     font-size: 0.875rem;
     line-height: 1.25rem;

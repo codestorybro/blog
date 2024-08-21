@@ -6,6 +6,7 @@ import Category from "src/components/Category"
 import styled from "@emotion/styled"
 import NotionRenderer from "../components/NotionRenderer"
 import usePostQuery from "src/hooks/usePostQuery"
+import SubscribeInput from "src/routes/Feed/SubscribeInput"
 
 type Props = {}
 
@@ -32,6 +33,7 @@ const PostDetail: React.FC<Props> = () => {
         </div>
         {data.type[0] === "Post" && (
           <>
+            <SubscribeInput maxWidth={466} />
             <Footer />
             <CommentBox data={data} />
           </>

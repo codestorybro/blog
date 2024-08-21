@@ -10,6 +10,7 @@ import ProfileCard from "./ProfileCard"
 import ContactCard from "./ContactCard"
 import PostList from "./PostList"
 import PinnedPosts from "./PostList/PinnedPosts"
+import SubscribeInput from "./SubscribeInput"
 
 const HEADER_HEIGHT = 73
 
@@ -30,6 +31,7 @@ const Feed: React.FC<Props> = () => {
       </div>
       <div className="mid">
         <MobileProfileCard />
+        <SubscribeInput />
         <PinnedPosts q={q} />
         <SearchInput value={q} onChange={(e) => setQ(e.target.value)} />
         <div className="tags">

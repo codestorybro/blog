@@ -101,6 +101,9 @@ const StyledWrapper = styled.div`
     border-radius: 1rem;
     color: ${({ theme }) => theme.colors.gray11};
     cursor: pointer;
+    -webkit-transition: all 150ms;
+    -ms-transition: all 150ms;
+    transition: all 150ms;
 
     :hover {
       color: ${({ theme }) => theme.colors.gray12};

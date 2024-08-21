@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
       <ul>
         {links.map((link) => (
           <li key={link.id}>
-            <Link href={link.to}>{link.name}</Link>
+            <StyledLink href={link.to}>{link.name}</StyledLink>
           </li>
         ))}
       </ul>
@@ -17,6 +17,22 @@ const NavBar: React.FC = () => {
 }
 
 export default NavBar
+
+const StyledLink = styled(Link)`
+  margin-left: 8px;
+  background-color: #238636;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 16px;
+  color: #fff;
+  -webkit-transition: background-color 150ms;
+  -ms-transition: background-color 150ms;
+  transition: background-color 150ms;
+
+  :hover {
+    background-color: #185422;
+  }
+`
 
 const StyledWrapper = styled.div`
   flex-shrink: 0;
