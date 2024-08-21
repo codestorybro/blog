@@ -14,7 +14,7 @@ const ProfileCard: React.FC<Props> = () => {
       </div>
       <div className="content">
         <div className="top">
-          <Image src={CONFIG.profile.image} fill alt="" />
+          <StyledImage src={CONFIG.profile.image} fill alt="" />
         </div>
         <div className="mid">
           <div className=" name">{CONFIG.profile.name}</div>
@@ -27,6 +27,10 @@ const ProfileCard: React.FC<Props> = () => {
 }
 
 export default ProfileCard
+
+const StyledImage = styled(Image)`
+  border-radius: 100%;
+`
 
 const StyledWrapper = styled.div`
   > .title {

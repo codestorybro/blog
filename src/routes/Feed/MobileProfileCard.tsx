@@ -13,7 +13,7 @@ const MobileProfileCard: React.FC<Props> = () => {
       <div className="top">💻 Profile</div>
       <div className="mid">
         <div className="wrapper">
-          <Image
+          <StyledImage
             src={CONFIG.profile.image}
             width={90}
             height={90}
@@ -32,6 +32,10 @@ const MobileProfileCard: React.FC<Props> = () => {
 }
 
 export default MobileProfileCard
+
+const StyledImage = styled(Image)`
+  border-radius: 100%;
+`
 
 const StyledWrapper = styled.div`
   display: block;

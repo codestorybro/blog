@@ -1,8 +1,9 @@
 const CONFIG = {
   // profile setting (required)
+  logo: "/logo.png",
   profile: {
     name: "Code Story Bro",
-    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/profile-image.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Staff Software Engineer ⚛️",
     bio: "My React journey is fueled by a passion for nurturing talent and driving technological advancement.",
     email: "marcin.kolodziej.dev@gmail.com",
