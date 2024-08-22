@@ -65,7 +65,7 @@ const DetailPage: NextPageWithLayout = () => {
 
   const meta = {
     title: post.title,
-    pageTitle: `${CONFIG.profile.name} - ${post.title}`,
+    pageTitle: `${CONFIG.profile.name} — ${post.title}`,
     date: new Date(date).toISOString(),
     image: image,
     description: post.summary || "",

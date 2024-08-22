@@ -14,7 +14,7 @@ const Footer: React.FC<Props> = ({ className }) => {
   return (
     <StyledWrapper className={className}>
       <span>
-        © {CONFIG.profile.name} {from === y || !from ? y : `${from} - ${y}`}
+        © {CONFIG.profile.name} {from === y || !from ? y : `${from} — ${y}`}
       </span>
     </StyledWrapper>
   )

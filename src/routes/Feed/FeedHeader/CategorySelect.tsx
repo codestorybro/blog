@@ -1,7 +1,7 @@
 import useDropdown from "src/hooks/useDropdown"
 import { useRouter } from "next/router"
 import React from "react"
-import { MdExpandMore } from "react-icons/md"
+import { MdFilterList } from "react-icons/md"
 import { DEFAULT_CATEGORY } from "src/constants"
 import styled from "@emotion/styled"
 import { useCategoriesQuery } from "src/hooks/useCategoriesQuery"
@@ -26,7 +26,7 @@ const CategorySelect: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div ref={dropdownRef} className="wrapper" onClick={handleOpen}>
-        {currentCategory} Posts <MdExpandMore />
+        {currentCategory} posts <MdFilterList />
       </div>
       {opened && (
         <div className="content">

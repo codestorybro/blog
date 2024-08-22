@@ -18,7 +18,7 @@ NotFoundPage.getLayout = (page) => {
       <MetaConfig
         {...{
           title: CONFIG.blog.title,
-          pageTitle: `${CONFIG.profile.name} - 404 not found`,
+          pageTitle: `${CONFIG.profile.name} — 404 not found`,
           description: CONFIG.blog.description,
           type: "website",
           url: CONFIG.link,

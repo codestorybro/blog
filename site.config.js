@@ -15,7 +15,7 @@ const CONFIG = {
   },
   // blog setting (required)
   blog: {
-    title: "CodeStoryBro - master React with practical tutorials and insights",
+    title: "CodeStoryBro — Master React with practical tutorials and insights",
     description:
       "Discover practical React tutorials, insightful advice, and a community of passionate developers dedicated to building better web applications. Whether you're a beginner or an expert, you'll find valuable content to enhance your React skills and deepen your programming knowledge. Let's grow and learn together!",
     image: "/thumbnail.png",

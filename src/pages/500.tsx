@@ -19,7 +19,7 @@ Error500Page.getLayout = (page) => {
       <MetaConfig
         {...{
           title: CONFIG.blog.title,
-          pageTitle: `${CONFIG.profile.name} - 500 internal server error`,
+          pageTitle: `${CONFIG.profile.name} — 500 internal server error`,
           description: CONFIG.blog.description,
           type: "website",
           url: CONFIG.link,

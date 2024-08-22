@@ -44,7 +44,7 @@ const SubscribeInput: React.FC<Props> = ({ ...props }) => {
       {
         loading: "Loading ...",
         success: (data) => {
-          if (!data.ok) throw new Error(`${data.status} - ${data.statusText}`)
+          if (!data.ok) throw new Error(`${data.status} — ${data.statusText}`)
           reset()
           return "Check your email to confirm your subscription"
         },

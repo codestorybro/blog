@@ -46,10 +46,7 @@ const PostDetail: React.FC<Props> = () => {
 export default PostDetail
 
 const StyledWrapper = styled.div`
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding: 1.5rem;
   border-radius: 1.5rem;
   max-width: 68rem;
   background-color: ${({ theme }) =>
