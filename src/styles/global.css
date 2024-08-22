@@ -1,5 +1,6 @@
 .utterances-frame {
-  height: 50%;
+  min-height: 250px;
+  height: auto !important;
 }
 
 .utterances {
