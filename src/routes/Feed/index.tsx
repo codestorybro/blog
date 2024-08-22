@@ -64,7 +64,7 @@ export default Feed
 const StyledWrapper = styled.div`
   grid-template-columns: repeat(12, minmax(0, 1fr));
 
-  padding: 2rem 0;
+  padding: 1rem 0;
   display: grid;
   gap: 1.5rem;
 
