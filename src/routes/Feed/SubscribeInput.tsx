@@ -57,7 +57,7 @@ const SubscribeInput: React.FC<Props> = ({ ...props }) => {
   }
 
   return (
-    <>
+    <div style={props.maxWidth ? { display: "table", margin: "0 auto" } : {}}>
       <StyledLabel>
         <Emoji>💌</Emoji> Stay ahead in React and <b>subscribe</b> to
         newsletter!
@@ -77,7 +77,7 @@ const SubscribeInput: React.FC<Props> = ({ ...props }) => {
           Subscribe
         </button>
       </StyledForm>
-    </>
+    </div>
   )
 }
 

@@ -5,3 +5,7 @@
 .utterances {
   margin-top: 2rem;
 }
+
+.form-control {
+  font-size: 16px !important;
+}

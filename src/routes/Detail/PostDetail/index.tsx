@@ -1,12 +1,13 @@
 import React from "react"
 import PostHeader from "./PostHeader"
-import Footer from "./PostFooter"
+import PostFooter from "./PostFooter"
 import CommentBox from "./CommentBox"
 import Category from "src/components/Category"
 import styled from "@emotion/styled"
 import NotionRenderer from "../components/NotionRenderer"
 import usePostQuery from "src/hooks/usePostQuery"
 import SubscribeInput from "src/routes/Feed/SubscribeInput"
+import Footer from "src/routes/Feed/Footer"
 
 type Props = {}
 
@@ -34,8 +35,9 @@ const PostDetail: React.FC<Props> = () => {
         {data.type[0] === "Post" && (
           <>
             <SubscribeInput maxWidth={466} />
-            <Footer />
+            <PostFooter />
             <CommentBox data={data} />
+            <Footer />
           </>
         )}
       </article>
