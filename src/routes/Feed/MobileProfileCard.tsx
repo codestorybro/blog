@@ -10,6 +10,7 @@ import {
   AiOutlineMail,
   AiOutlineX,
 } from "react-icons/ai"
+import { Emoji } from "src/components/Emoji"
 
 type Props = {
   className?: string
@@ -18,12 +19,14 @@ type Props = {
 const MobileProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
-      <div className="top">💻 Profile</div>
+      <div className="top">
+        <Emoji>💬</Emoji> Contact
+      </div>
       <div className="mid">
         <div className="wrapper">
           <StyledImage
             priority
-            src={CONFIG.profile.image}
+            src={CONFIG.profile.img}
             width={90}
             height={90}
             css={{ position: "relative" }}
@@ -32,7 +35,6 @@ const MobileProfileCard: React.FC<Props> = () => {
           <div className="wrapper">
             <div className="top">{CONFIG.profile.name}</div>
             <div className="mid">{CONFIG.profile.role}</div>
-            <div className="btm">{CONFIG.profile.bio}</div>
           </div>
         </div>
         <div className="socials">
@@ -121,7 +123,7 @@ const StyledWrapper = styled.div`
       gap: 0.5rem;
       align-items: center;
       > .wrapper {
-        height: fit-content;
+        // height: fit-content;
         > .top {
           font-size: 1.25rem;
           line-height: 1.75rem;
@@ -143,15 +145,15 @@ const StyledWrapper = styled.div`
     > .socials {
       margin-top: 8px;
       display: flex;
-      gap: 1rem;
+      0.75rem;
       align-items: center;
 
       a {
         display: flex;
-        padding: 0.75rem;
+        padding: 0.5rem;
         gap: 0.75rem;
         align-items: center;
-        border-radius: 1rem;
+        border-radius: 3rem;
         color: ${({ theme }) => theme.colors.gray11};
         cursor: pointer;
         -webkit-transition: all 150ms;

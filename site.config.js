@@ -3,9 +3,8 @@ const CONFIG = {
   logo: "/logo.png",
   profile: {
     name: "CodeStoryBro",
-    image: "/profile-image.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    img: "/profile-img.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Staff Software Engineer ⚛️",
-    bio: "My React journey is fueled by a passion for nurturing talent and driving tech advancement.",
     email: "marcin.kolodziej.dev@gmail.com",
     linkedin: "codestorybro",
     discord: "https://discord.gg/4qBU8QT3ed",

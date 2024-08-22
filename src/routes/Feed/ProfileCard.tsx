@@ -1,6 +1,14 @@
 import styled from "@emotion/styled"
 import Image from "next/image"
 import React from "react"
+import {
+  AiFillLinkedin,
+  AiOutlineDiscord,
+  AiOutlineGithub,
+  AiOutlineInstagram,
+  AiOutlineMail,
+  AiOutlineX,
+} from "react-icons/ai"
 import { CONFIG } from "site.config"
 import { Emoji } from "src/components/Emoji"
 
@@ -10,13 +18,13 @@ const ProfileCard: React.FC<Props> = () => {
   return (
     <StyledWrapper>
       <div className="title">
-        <Emoji>💻</Emoji> Profile
+        <Emoji>💬</Emoji> Contact
       </div>
       <div className="content">
         <div className="top">
           <StyledImage
             priority
-            src={CONFIG.profile.image}
+            src={CONFIG.profile.img}
             fill
             alt=""
             sizes="100%"
@@ -25,7 +33,59 @@ const ProfileCard: React.FC<Props> = () => {
         <div className="mid">
           <div className=" name">{CONFIG.profile.name}</div>
           <div className="role">{CONFIG.profile.role}</div>
-          <div className="text-sm mb-2">{CONFIG.profile.bio}</div>
+        </div>
+        <div className="socials">
+          {CONFIG.profile.github && (
+            <a
+              href={`https://github.com/${CONFIG.profile.github}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineGithub className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.instagram && (
+            <a
+              href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineInstagram className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.email && (
+            <a
+              href={`mailto:${CONFIG.profile.email}`}
+              rel="noreferrer"
+              target="_blank"
+              css={{ overflow: "hidden" }}
+            >
+              <AiOutlineMail className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.linkedin && (
+            <a
+              href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiFillLinkedin className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.discord && (
+            <a
+              href={`${CONFIG.profile.discord}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineDiscord className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.x && (
+            <a href={`${CONFIG.profile.x}`} rel="noreferrer" target="_blank">
+              <AiOutlineX className="icon" />
+            </a>
+          )}
         </div>
       </div>
     </StyledWrapper>
@@ -44,7 +104,6 @@ const StyledWrapper = styled.div`
     margin-bottom: 0.75rem;
   }
   > .content {
-    margin-bottom: 2.25rem;
     border-radius: 1rem;
     width: 100%;
     background-color: ${({ theme }) =>
@@ -76,15 +135,42 @@ const StyledWrapper = styled.div`
         font-weight: 700;
       }
       .role {
-        margin-bottom: 1rem;
         font-size: 0.875rem;
         line-height: 1.25rem;
         color: ${({ theme }) => theme.colors.gray11};
       }
-      .bio {
-        margin-bottom: 0.5rem;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
+    }
+    .socials {
+      justify-content: center;
+      margin-top: 4px;
+      display: flex;
+      gap: 0.75rem;
+      align-items: center;
+
+      a {
+        display: flex;
+        padding: 0.5rem;
+        gap: 0.75rem;
+        align-items: center;
+        border-radius: 3rem;
+        color: ${({ theme }) => theme.colors.gray11};
+        cursor: pointer;
+        -webkit-transition: all 150ms;
+        -ms-transition: all 150ms;
+        transition: all 150ms;
+
+        :hover {
+          color: ${({ theme }) => theme.colors.gray12};
+          background-color: ${({ theme }) => theme.colors.gray5};
+        }
+        .icon {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+        .name {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
       }
     }
   }

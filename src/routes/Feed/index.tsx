@@ -7,7 +7,6 @@ import styled from "@emotion/styled"
 import TagList from "./TagList"
 import MobileProfileCard from "./MobileProfileCard"
 import ProfileCard from "./ProfileCard"
-import ContactCard from "./ContactCard"
 import PostList from "./PostList"
 import PinnedPosts from "./PostList/PinnedPosts"
 import SubscribeInput from "./SubscribeInput"
@@ -51,7 +50,6 @@ const Feed: React.FC<Props> = () => {
         }}
       >
         <ProfileCard />
-        <ContactCard />
         <div className="footer">
           <Footer />
         </div>
