@@ -2,6 +2,14 @@ import { CONFIG } from "site.config"
 import Image from "next/image"
 import React from "react"
 import styled from "@emotion/styled"
+import {
+  AiFillLinkedin,
+  AiOutlineDiscord,
+  AiOutlineGithub,
+  AiOutlineInstagram,
+  AiOutlineMail,
+  AiOutlineX,
+} from "react-icons/ai"
 
 type Props = {
   className?: string
@@ -25,6 +33,59 @@ const MobileProfileCard: React.FC<Props> = () => {
             <div className="mid">{CONFIG.profile.role}</div>
             <div className="btm">{CONFIG.profile.bio}</div>
           </div>
+        </div>
+        <div className="socials">
+          {CONFIG.profile.github && (
+            <a
+              href={`https://github.com/${CONFIG.profile.github}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineGithub className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.instagram && (
+            <a
+              href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineInstagram className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.email && (
+            <a
+              href={`mailto:${CONFIG.profile.email}`}
+              rel="noreferrer"
+              target="_blank"
+              css={{ overflow: "hidden" }}
+            >
+              <AiOutlineMail className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.linkedin && (
+            <a
+              href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiFillLinkedin className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.discord && (
+            <a
+              href={`${CONFIG.profile.discord}`}
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineDiscord className="icon" />
+            </a>
+          )}
+          {CONFIG.profile.x && (
+            <a href={`${CONFIG.profile.x}`} rel="noreferrer" target="_blank">
+              <AiOutlineX className="icon" />
+            </a>
+          )}
         </div>
       </div>
     </StyledWrapper>
@@ -73,6 +134,38 @@ const StyledWrapper = styled.div`
           color: ${({ theme }) => theme.colors.gray11};
         }
         > .btm {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        }
+      }
+    }
+    > .socials {
+      margin-top: 8px;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      a {
+        display: flex;
+        padding: 0.75rem;
+        gap: 0.75rem;
+        align-items: center;
+        border-radius: 1rem;
+        color: ${({ theme }) => theme.colors.gray11};
+        cursor: pointer;
+        -webkit-transition: all 150ms;
+        -ms-transition: all 150ms;
+        transition: all 150ms;
+
+        :hover {
+          color: ${({ theme }) => theme.colors.gray12};
+          background-color: ${({ theme }) => theme.colors.gray5};
+        }
+        .icon {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
+        .name {
           font-size: 0.875rem;
           line-height: 1.25rem;
         }
