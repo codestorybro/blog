@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react"
 
 type Props = {}
 
-const Footer: React.FC<Props> = () => {
+const ToTopArrow: React.FC<Props> = () => {
   const [topButtonVisible, setTopButtonVisible] = useState(false)
 
   const scrollFunction = () => {
@@ -30,7 +30,7 @@ const Footer: React.FC<Props> = () => {
   )
 }
 
-export default Footer
+export default ToTopArrow
 
 const StyledWrapper = styled.div`
   z-index: 999;
@@ -62,7 +62,6 @@ const StyledWrapper = styled.div`
 
     :hover {
       background-color: #185422;
-      color: ${({ theme }) => theme.colors.gray12};
     }
   }
 

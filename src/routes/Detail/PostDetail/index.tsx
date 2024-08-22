@@ -1,6 +1,6 @@
 import React from "react"
 import PostHeader from "./PostHeader"
-import PostFooter from "./PostFooter"
+import ToTopArrow from "./ToTopArrow"
 import CommentBox from "./CommentBox"
 import Category from "src/components/Category"
 import styled from "@emotion/styled"
@@ -35,11 +35,11 @@ const PostDetail: React.FC<Props> = () => {
         {data.type[0] === "Post" && (
           <>
             <SubscribeInput maxWidth={466} />
-            <PostFooter />
             <CommentBox data={data} />
-            <Footer />
           </>
         )}
+        <ToTopArrow />
+        <Footer />
       </article>
     </StyledWrapper>
   )

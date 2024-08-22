@@ -11,6 +11,7 @@ import ContactCard from "./ContactCard"
 import PostList from "./PostList"
 import PinnedPosts from "./PostList/PinnedPosts"
 import SubscribeInput from "./SubscribeInput"
+import ToTopArrow from "../Detail/PostDetail/ToTopArrow"
 
 const HEADER_HEIGHT = 73
 
@@ -55,6 +56,7 @@ const Feed: React.FC<Props> = () => {
           <Footer />
         </div>
       </div>
+      <ToTopArrow />
     </StyledWrapper>
   )
 }
