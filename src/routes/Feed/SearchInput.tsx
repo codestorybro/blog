@@ -14,6 +14,8 @@ const SearchInput: React.FC<Props> = ({ ...props }) => {
         className="mid"
         type="text"
         placeholder="Enter searching phrase..."
+        name="search"
+        id="search"
         {...props}
       />
     </StyledWrapper>

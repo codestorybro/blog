@@ -8,6 +8,7 @@ import "../styles/global.css"
 
 function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout || ((page) => page)
+  console.log = function () {}
 
   return (
     <QueryClientProvider client={queryClient}>

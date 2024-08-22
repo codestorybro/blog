@@ -22,6 +22,7 @@ const MobileProfileCard: React.FC<Props> = () => {
       <div className="mid">
         <div className="wrapper">
           <StyledImage
+            priority
             src={CONFIG.profile.image}
             width={90}
             height={90}

@@ -71,6 +71,9 @@ const SubscribeInput: React.FC<Props> = ({ ...props }) => {
           className="mid"
           type="text"
           placeholder="Enter your email..."
+          autoComplete="off"
+          name="email"
+          id="email"
           {...props}
         />
         <button type="submit" disabled={isLoading}>
