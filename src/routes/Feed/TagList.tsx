@@ -56,13 +56,9 @@ export default TagList
 
 const StyledWrapper = styled.div`
   .top {
-    display: none;
+    display: block;
     padding: 0.25rem;
     margin-bottom: 0.75rem;
-
-    @media (min-width: 1024px) {
-      display: block;
-    }
   }
 
   .list {
