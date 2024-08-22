@@ -89,7 +89,7 @@ const StyledLabel = styled.div`
 `
 
 const StyledForm = styled.form`
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 
   > input {
     padding-top: 0.5rem;
@@ -125,6 +125,12 @@ const StyledForm = styled.form`
 
     :hover {
       background-color: #185422;
+    }
+  }
+
+  @media (max-width: 389px) {
+    > button {
+      float: right;
     }
   }
 

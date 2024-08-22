@@ -2,7 +2,7 @@ const CONFIG = {
   // profile setting (required)
   logo: "/logo.png",
   profile: {
-    name: "Code Story Bro",
+    name: "CodeStoryBro",
     image: "/profile-image.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "Staff Software Engineer ⚛️",
     bio: "My React journey is fueled by a passion for nurturing talent and driving tech advancement.",
@@ -15,8 +15,7 @@ const CONFIG = {
   },
   // blog setting (required)
   blog: {
-    title:
-      "Code Story Bro - master React with practical tutorials and insights",
+    title: "CodeStoryBro - master React with practical tutorials and insights",
     description:
       "Discover practical React tutorials, insightful advice, and a community of passionate developers dedicated to building better web applications. Whether you're a beginner or an expert, you'll find valuable content to enhance your React skills and deepen your programming knowledge. Let's grow and learn together!",
     image: "/thumbnail.png",
