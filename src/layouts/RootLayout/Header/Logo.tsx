@@ -2,11 +2,19 @@ import Link from "next/link"
 import { CONFIG } from "site.config"
 import styled from "@emotion/styled"
 import Image from "next/image"
+import useScheme from "src/hooks/useScheme"
 
 const Logo = () => {
+  const [scheme, setScheme] = useScheme()
+
   return (
     <StyledWrapper href="/" aria-label={CONFIG.profile.name}>
-      <StyledLogo src={CONFIG.logo} width={40} height={40} alt="" />
+      <StyledLogo
+        src={scheme === "light" ? CONFIG.logoLight : CONFIG.logoDark}
+        width={40}
+        height={40}
+        alt=""
+      />
       <StyledSpan>{CONFIG.profile.name}</StyledSpan>
     </StyledWrapper>
   )

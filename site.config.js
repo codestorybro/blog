@@ -1,6 +1,7 @@
 const CONFIG = {
   // profile setting (required)
-  logo: "/logo.png",
+  logoLight: "/logo-dark.png",
+  logoDark: "/logo-light.png",
   profile: {
     name: "CodeStoryBro",
     img: "/profile-img.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
@@ -17,7 +18,7 @@ const CONFIG = {
     title: "CodeStoryBro — Master React with practical tutorials and insights",
     description:
       "Discover practical React tutorials, insightful advice, and a community of passionate developers dedicated to building better web applications. Whether you're a beginner or an expert, you'll find valuable content to enhance your React skills and deepen your programming knowledge. Let's grow and learn together!",
-    image: "/thumbnail.png",
+    thumbnailImage: "/thumbnail-image.png",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
 
