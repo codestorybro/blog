@@ -21,18 +21,18 @@ const OrderButtons: React.FC<Props> = () => {
   }
   return (
     <StyledWrapper>
-      <a
+      <span
         data-active={currentOrder === "desc"}
         onClick={() => handleClickOrderBy("desc")}
       >
         Desc
-      </a>
-      <a
+      </span>
+      <span
         data-active={currentOrder === "asc"}
         onClick={() => handleClickOrderBy("asc")}
       >
         Asc
-      </a>
+      </span>
     </StyledWrapper>
   )
 }
@@ -44,7 +44,7 @@ const StyledWrapper = styled.div`
   gap: 0.5rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  a {
+  span {
     cursor: pointer;
     color: ${({ theme }) => theme.colors.gray10};
 

@@ -19,13 +19,15 @@ const ToTopArrow: React.FC<Props> = () => {
   }, [])
 
   return (
-    <StyledWrapper style={topButtonVisible ? { opacity: 1 } : {}}>
-      <a
+    <StyledWrapper
+      style={topButtonVisible ? { opacity: 1, cursor: "pointer" } : {}}
+    >
+      <span
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         style={topButtonVisible ? {} : { cursor: "default" }}
       >
-        ⬆️
-      </a>
+        ↑
+      </span>
     </StyledWrapper>
   )
 }
@@ -47,9 +49,9 @@ const StyledWrapper = styled.div`
   -o-transition: opacity 0.15s ease-in-out;
   transition: opacity 0.15s ease-in-out;
 
-  a {
+  span {
     margin-top: 0.5rem;
-    background-color: #238636;
+    background-color: rgba(35, 134, 54, 0.9);
     padding: 8px 11px;
     border-radius: 100%;
     color: #fff;
@@ -65,7 +67,7 @@ const StyledWrapper = styled.div`
     }
   }
 
-  @media (min-width: 1048px) {
+  @media (min-width: 1020px) {
     margin-right: -450px;
     right: 50%;
   }

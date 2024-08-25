@@ -39,13 +39,13 @@ const TagList: React.FC<Props> = () => {
       </div>
       <div className="list">
         {Object.keys(data).map((key) => (
-          <a
+          <span
             key={key}
             data-active={key === currentTag}
             onClick={() => handleClickTag(key)}
           >
             {key}
-          </a>
+          </span>
         ))}
       </div>
     </StyledWrapper>
@@ -78,7 +78,7 @@ const StyledWrapper = styled.div`
       display: block;
     }
 
-    a {
+    span {
       display: block;
       padding: 0.25rem;
       padding-left: 1rem;

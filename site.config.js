@@ -4,7 +4,7 @@ const CONFIG = {
   logoDark: "/logo-light.png",
   profile: {
     name: "CodeStoryBro",
-    profilePhoto: "./profile-photo.png",
+    profilePhoto: "/profile-photo.png",
     role: "Staff Software Engineer ⚛️",
     email: "marcin.kolodziej.dev@gmail.com",
     linkedin: "codestorybro",
