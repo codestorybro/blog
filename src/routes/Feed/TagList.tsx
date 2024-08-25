@@ -88,7 +88,7 @@ const StyledWrapper = styled.div`
       border-radius: 0.75rem;
       font-size: 0.875rem;
       line-height: 1.25rem;
-      color: ${({ theme }) => theme.colors.gray10};
+      color: ${({ theme }) => theme.colors.gray11};
       flex-shrink: 0;
       cursor: pointer;
 
@@ -96,12 +96,9 @@ const StyledWrapper = styled.div`
         background-color: ${({ theme }) => theme.colors.gray4};
       }
       &[data-active="true"] {
-        color: ${({ theme }) => theme.colors.gray12};
+        color: #238636;
+        font-weight: 700;
         background-color: ${({ theme }) => theme.colors.gray4};
-
-        :hover {
-          background-color: ${({ theme }) => theme.colors.gray4};
-        }
       }
     }
   }
