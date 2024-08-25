@@ -40,6 +40,7 @@ const ProfileCard: React.FC<Props> = () => {
               href={`https://github.com/${CONFIG.profile.github}`}
               rel="noreferrer"
               target="_blank"
+              aria-label="Github"
             >
               <AiOutlineGithub className="icon" />
             </a>
@@ -49,6 +50,7 @@ const ProfileCard: React.FC<Props> = () => {
               href={`https://www.instagram.com/${CONFIG.profile.instagram}`}
               rel="noreferrer"
               target="_blank"
+              aria-label="Instagram"
             >
               <AiOutlineInstagram className="icon" />
             </a>
@@ -59,6 +61,7 @@ const ProfileCard: React.FC<Props> = () => {
               rel="noreferrer"
               target="_blank"
               css={{ overflow: "hidden" }}
+              aria-label="Email"
             >
               <AiOutlineMail className="icon" />
             </a>
@@ -68,6 +71,7 @@ const ProfileCard: React.FC<Props> = () => {
               href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
               rel="noreferrer"
               target="_blank"
+              aria-label="LinkedIn"
             >
               <AiFillLinkedin className="icon" />
             </a>
@@ -77,12 +81,18 @@ const ProfileCard: React.FC<Props> = () => {
               href={`${CONFIG.profile.discord}`}
               rel="noreferrer"
               target="_blank"
+              aria-label="Discord"
             >
               <AiOutlineDiscord className="icon" />
             </a>
           )}
           {CONFIG.profile.x && (
-            <a href={`${CONFIG.profile.x}`} rel="noreferrer" target="_blank">
+            <a
+              href={`${CONFIG.profile.x}`}
+              rel="noreferrer"
+              target="_blank"
+              aria-label="X"
+            >
               <AiOutlineX className="icon" />
             </a>
           )}
