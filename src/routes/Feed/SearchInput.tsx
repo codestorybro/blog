@@ -25,11 +25,8 @@ const SearchInput: React.FC<Props> = ({ ...props }) => {
 export default SearchInput
 
 const StyledWrapper = styled.div`
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
-  @media (min-width: 768px) {
-    margin-bottom: 2rem;
-  }
   > .top {
     padding: 0.25rem;
     margin-bottom: 0.75rem;

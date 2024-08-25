@@ -4,7 +4,7 @@ const CONFIG = {
   logoDark: "/logo-light.png",
   profile: {
     name: "CodeStoryBro",
-    img: "/profile-img.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    photo: "/photo.png",
     role: "Staff Software Engineer ⚛️",
     email: "marcin.kolodziej.dev@gmail.com",
     linkedin: "codestorybro",

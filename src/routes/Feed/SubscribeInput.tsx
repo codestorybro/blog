@@ -92,7 +92,7 @@ const StyledLabel = styled.div`
 `
 
 const StyledForm = styled.form`
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   > input {
     padding-top: 0.5rem;
@@ -143,9 +143,5 @@ const StyledForm = styled.form`
     > button {
       margin: 0 0 0 8px;
     }
-  }
-
-  @media (min-width: 768px) {
-    margin-bottom: 2rem;
   }
 `

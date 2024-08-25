@@ -22,12 +22,13 @@ const ProfileCard: React.FC<Props> = () => {
       </div>
       <div className="content">
         <div className="top">
-          <StyledImage
+          <Image
             priority
-            src={CONFIG.profile.img}
-            fill
-            alt=""
-            sizes="100%"
+            src={CONFIG.profile.photo}
+            width={188}
+            height={198}
+            alt="profile_image"
+            sizes="188x198"
           />
         </div>
         <div className="mid">
@@ -94,10 +95,6 @@ const ProfileCard: React.FC<Props> = () => {
 
 export default ProfileCard
 
-const StyledImage = styled(Image)`
-  border-radius: 100%;
-`
-
 const StyledWrapper = styled.div`
   > .title {
     padding: 0.25rem;
@@ -115,13 +112,9 @@ const StyledWrapper = styled.div`
       padding: 1rem;
     }
     .top {
+      text-align: center;
       position: relative;
       width: 100%;
-      &:after {
-        content: "";
-        display: block;
-        padding-bottom: 100%;
-      }
     }
     .mid {
       display: flex;
