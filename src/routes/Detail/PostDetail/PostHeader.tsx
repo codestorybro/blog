@@ -25,7 +25,10 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                   <Image
                     priority
                     css={{ borderRadius: "50%" }}
-                    src={data.author[0].profile_photo || CONFIG.profile.photo}
+                    src={
+                      data.author[0].profile_photo ||
+                      CONFIG.profile.profilePhoto
+                    }
                     alt="profile_photo"
                     width={24}
                     height={24}

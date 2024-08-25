@@ -24,11 +24,10 @@ const ProfileCard: React.FC<Props> = () => {
         <div className="top">
           <Image
             priority
-            src={CONFIG.profile.photo}
-            width={188}
+            src={CONFIG.profile.profilePhoto}
+            width={198}
             height={198}
             alt="profile_image"
-            sizes="188x198"
           />
         </div>
         <div className="mid">
