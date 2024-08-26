@@ -32,7 +32,11 @@ const PostCard: React.FC<Props> = ({ data }) => {
             />
           </div>
         )}
-        <div data-thumb={!!data.thumbnail} data-category={!!category} className="content">
+        <div
+          data-thumb={!!data.thumbnail}
+          data-category={!!category}
+          className="content"
+        >
           <header className="top">
             <h2>{data.title}</h2>
           </header>
@@ -92,11 +96,7 @@ const StyledWrapper = styled(Link)`
       position: relative;
       width: 100%;
       background-color: ${({ theme }) => theme.colors.gray2};
-      padding-bottom: 66%;
-
-      @media (min-width: 1024px) {
-        padding-bottom: 50%;
-      }
+      padding-bottom: 50%;
     }
     > .content {
       padding: 1rem;

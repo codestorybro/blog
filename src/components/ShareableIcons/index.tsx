@@ -40,6 +40,7 @@ export default ShareableIcons
 
 const StyledWrapper = styled.div`
   display: flex;
+  margin-top: 2rem;
   margin-bottom: 1rem;
   align-items: center;
   overflow-x: auto;

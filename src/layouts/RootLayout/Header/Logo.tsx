@@ -30,4 +30,6 @@ const StyledLogo = styled(Image)`
 `
 const StyledSpan = styled.span`
   margin-left: 8px;
+  font-weight: 900;
+  color: ${({ theme }) => theme.colors.logoColor};
 `

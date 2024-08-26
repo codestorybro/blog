@@ -20,6 +20,7 @@ export const colors = {
     ...blue,
     ...red,
     ...green,
+    logoColor: "#182933",
   },
   dark: {
     ...indigoDark,
@@ -27,5 +28,6 @@ export const colors = {
     ...blueDark,
     ...redDark,
     ...greenDark,
+    logoColor: "#f5f5f5",
   },
 }
