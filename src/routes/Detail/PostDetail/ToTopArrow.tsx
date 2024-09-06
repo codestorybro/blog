@@ -51,7 +51,7 @@ const StyledWrapper = styled.div`
 
   span {
     margin-top: 0.5rem;
-    background-color: rgba(35, 134, 54, 0.9);
+    background-color: rgba(9, 84, 165, 0.9);
     padding: 8px 11px;
     border-radius: 100%;
     color: #fff;
@@ -63,7 +63,7 @@ const StyledWrapper = styled.div`
     transition: background-color 150ms;
 
     :hover {
-      background-color: #185422;
+      background-color: #0a4481;
     }
   }
 
