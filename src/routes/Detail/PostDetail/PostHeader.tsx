@@ -27,7 +27,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                     css={{ borderRadius: "50%" }}
                     src={
                       data.author[0].profile_photo ||
-                      CONFIG.profile.profilePhoto
+                      CONFIG.profile.defaultAvatar
                     }
                     alt="profile_photo"
                     width={24}

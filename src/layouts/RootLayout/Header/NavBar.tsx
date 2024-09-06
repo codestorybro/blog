@@ -20,7 +20,7 @@ export default NavBar
 
 const StyledLink = styled(Link)`
   margin-left: 8px;
-  background-color: #238636;
+  background-color: ${({ theme }) => theme.colors.blue8};
   font-weight: 500;
   padding: 6px 12px;
   border-radius: 16px;
@@ -30,7 +30,7 @@ const StyledLink = styled(Link)`
   transition: background-color 150ms;
 
   :hover {
-    background-color: #185422;
+    background-color: ${({ theme }) => theme.colors.blue7};
   }
 `
 

@@ -28,7 +28,7 @@ const FeedPage: NextPageWithLayout = () => {
     description: CONFIG.blog.description,
     type: "website",
     url: CONFIG.link,
-    image: CONFIG.blog.thumbnailImage,
+    image: CONFIG.blog.thumbnail,
   }
 
   return (

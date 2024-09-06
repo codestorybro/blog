@@ -48,10 +48,14 @@ const StyledWrapper = styled.div`
     cursor: pointer;
     color: ${({ theme }) => theme.colors.gray12};
 
-    &[data-active="true"] {
-      font-weight: 700;
+    :hover {
+      color: ${({ theme }) => theme.colors.blue11};
+    }
 
-      color: #238636;
+    &[data-active="true"] {
+      font-weight: 900;
+
+      color: ${({ theme }) => theme.colors.blue9};
     }
   }
 `

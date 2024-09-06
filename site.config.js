@@ -1,11 +1,11 @@
 const CONFIG = {
   // profile setting (required)
-  logoLight: "/logo-dark.png",
-  logoDark: "/logo-light.png",
+  whiteLogo: "/white-logo.png",
+  blackLogo: "/black-logo.png",
   profile: {
     name: "CodeStoryBro",
-    profilePhoto: "/profile-photo.png",
-    role: "Staff Software Engineer ⚛️",
+    defaultAvatar: "/default-avatar.png",
+    role: "Staff Software Engineer",
     email: "marcin.kolodziej.dev@gmail.com",
     linkedin: "codestorybro",
     discord: "https://discord.gg/4qBU8QT3ed",
@@ -15,10 +15,10 @@ const CONFIG = {
   },
   // blog setting (required)
   blog: {
-    title: "CodeStoryBro — Master React with practical tutorials and insights",
+    title: "CodeStoryBro — discover the modern developer lifestyle",
     description:
-      "Discover practical React tutorials, insightful advice, and a community of passionate developers dedicated to building better web applications. Whether you're a beginner or an expert, you'll find valuable content to enhance your React skills and deepen your programming knowledge. Let's grow and learn together!",
-    thumbnailImage: "/thumbnail-image.png",
+      "Join the journey of a seasoned programmer and Engineering Manager sharing insights, tutorials, coding tips, and the lifestyle of modern developers. CodeStoryBro is where tech meets culture.",
+    thumbnail: "/thumbnail.png",
     scheme: "system", // 'light' | 'dark' | 'system'
   },
 

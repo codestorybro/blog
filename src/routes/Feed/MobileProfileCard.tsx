@@ -24,14 +24,6 @@ const MobileProfileCard: React.FC<Props> = () => {
       </div>
       <div className="mid">
         <div className="wrapper">
-          <Image
-            priority
-            src={CONFIG.profile.profilePhoto}
-            width={90}
-            height={90}
-            css={{ position: "relative" }}
-            alt="profile_image"
-          />
           <div className="wrapper">
             <div className="top">{CONFIG.profile.name}</div>
             <div className="mid">{CONFIG.profile.role}</div>
@@ -109,6 +101,7 @@ export default MobileProfileCard
 
 const StyledWrapper = styled.div`
   display: block;
+  max-width: 288px;
 
   @media (min-width: 1024px) {
     display: none;
@@ -119,25 +112,27 @@ const StyledWrapper = styled.div`
     margin-bottom: 0.75rem;
   }
   > .mid {
-    padding: 0.5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
     background-color: ${({ theme }) =>
       theme.scheme === "light" ? "white" : theme.colors.gray4};
     > .wrapper {
       display: flex;
-      gap: 0.5rem;
+      padding: 0.5rem;
       align-items: center;
+      justify-content: center;
       > .wrapper {
-        // height: fit-content;
         > .top {
           font-size: 1.25rem;
           line-height: 1.75rem;
           font-style: italic;
           font-weight: 700;
+          text-align: center;
+          position: relative;
+          width: 100%;
         }
         > .mid {
-          margin-bottom: 0.5rem;
           font-size: 0.875rem;
           line-height: 1.25rem;
           color: ${({ theme }) => theme.colors.gray11};
@@ -149,9 +144,10 @@ const StyledWrapper = styled.div`
       }
     }
     > .socials {
-      margin-top: 8px;
+      justify-content: center;
+      margin-top: 4px;
       display: flex;
-      0.75rem;
+      gap: 0.75rem;
       align-items: center;
 
       a {

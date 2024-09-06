@@ -107,7 +107,7 @@ const StyledForm = styled.form`
 
   > button {
     margin: 8px 0;
-    background-color: #238636;
+    background-color: ${({ theme }) => theme.colors.blue8};
     font-weight: 500;
     padding: 6px 12px;
     border-radius: 16px;
@@ -117,17 +117,17 @@ const StyledForm = styled.form`
     transition: background-color 150ms;
 
     :disabled {
-      background-color: #105823;
+      background-color: ${({ theme }) => theme.colors.blue1};
       color: #ffffff66;
       cursor: not-allowed;
 
       :hover {
-        background-color: #105823;
+        background-color: ${({ theme }) => theme.colors.blue1};
       }
     }
 
     :hover {
-      background-color: #185422;
+      background-color: ${({ theme }) => theme.colors.blue7};
     }
   }
 
