@@ -101,7 +101,6 @@ export default MobileProfileCard
 
 const StyledWrapper = styled.div`
   display: block;
-  max-width: 288px;
 
   @media (min-width: 1024px) {
     display: none;

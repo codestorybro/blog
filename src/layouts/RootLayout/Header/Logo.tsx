@@ -10,7 +10,7 @@ const Logo = () => {
   return (
     <Link href="/" aria-label={CONFIG.profile.name}>
       <StyledLogo
-        src={scheme === "light" ? CONFIG.blackLogo : CONFIG.whiteLogo}
+        src={scheme === "light" ? CONFIG.darkLogo : CONFIG.lightLogo}
         width={60}
         height={40}
         alt=""

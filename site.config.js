@@ -1,7 +1,7 @@
 const CONFIG = {
   // profile setting (required)
-  whiteLogo: "/white-logo.png",
-  blackLogo: "/black-logo.png",
+  lightLogo: "/light-logo.svg",
+  darkLogo: "/dark-logo.svg",
   profile: {
     name: "CodeStoryBro",
     defaultAvatar: "/default-avatar.png",
